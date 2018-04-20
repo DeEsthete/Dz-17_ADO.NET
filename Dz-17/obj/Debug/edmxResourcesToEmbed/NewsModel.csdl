@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="NewsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="NewsModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NewsSet" EntityType="NewsModel.News" />
+    <EntitySet Name="AuthorsSet" EntityType="NewsModel.Authors" />
+    <AssociationSet Name="NewsAuthors" Association="NewsModel.NewsAuthors">
+      <End Role="News" EntitySet="NewsSet" />
+      <End Role="Authors" EntitySet="AuthorsSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Text" Type="String" Nullable="false" />
+    <NavigationProperty Name="Authors" Relationship="NewsModel.NewsAuthors" FromRole="News" ToRole="Authors" />
+  </EntityType>
+  <EntityType Name="Authors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="News" Relationship="NewsModel.NewsAuthors" FromRole="Authors" ToRole="News" />
+  </EntityType>
+  <Association Name="NewsAuthors">
+    <End Type="NewsModel.News" Role="News" Multiplicity="1" />
+    <End Type="NewsModel.Authors" Role="Authors" Multiplicity="0..1" />
+  </Association>
+</Schema>

@@ -1,0 +1,13 @@
+c:\users\павлове\source\repos\Dz-17\Dz-17\bin\Debug\Dz-17.exe.config
+c:\users\павлове\source\repos\Dz-17\Dz-17\bin\Debug\Dz-17.exe
+c:\users\павлове\source\repos\Dz-17\Dz-17\bin\Debug\Dz-17.pdb
+c:\users\павлове\source\repos\Dz-17\Dz-17\bin\Debug\EntityFramework.dll
+c:\users\павлове\source\repos\Dz-17\Dz-17\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\павлове\source\repos\Dz-17\Dz-17\bin\Debug\EntityFramework.xml
+c:\users\павлове\source\repos\Dz-17\Dz-17\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\павлове\source\repos\Dz-17\Dz-17\bin\Debug\ru\EntityFramework.resources.dll
+c:\users\павлове\source\repos\Dz-17\Dz-17\obj\Debug\Dz-17.csprojResolveAssemblyReference.cache
+c:\users\павлове\source\repos\Dz-17\Dz-17\obj\Debug\Dz-17.csproj.CoreCompileInputs.cache
+c:\users\павлове\source\repos\Dz-17\Dz-17\obj\Debug\Dz-17.csproj.CopyComplete
+c:\users\павлове\source\repos\Dz-17\Dz-17\obj\Debug\Dz-17.exe
+c:\users\павлове\source\repos\Dz-17\Dz-17\obj\Debug\Dz-17.pdb
